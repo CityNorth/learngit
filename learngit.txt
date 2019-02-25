@@ -1,3 +1,24 @@
 学习使用github
 1 Github是全球最大的社交编程及代码托管网站（https://github.com/）
-2 
+2 Windows：GIt官网下载：https://www.git-scm.com/download/win
+  Linux：sudo apt-get install git       sudo yum install git-all
+3 安装完成后命名和给邮箱地址
+  $ git config --global user.name "xx"
+  $ git config --global user.email "email@example.com"
+4 创建空目录 :mkdir learngit
+  显示文件路径：pwd（进入文件夹）
+  将目录改为git仓库：git init（目录内多了一个.git文件，不可动；默认隐藏， ls -ah 就可以看见）
+5 把文件添加到仓库：git add 文件名
+  把文件提交到仓库：git commit -m "提交说明"
+  一共两步 add可多次添加  git add <file>；commit可以一次提交很多文件 git commit -m <message>
+6 查看仓库状态：git staus 
+  查看修改内容：git diff
+  查看修改日志：git log
+  版本回退：git reset （git reset --hard HEAD^）
+  查看历史命令：git reflog
+  删除：git rm
+7 远程仓库：ssh-keygen -t rsa -C "email@example.com" 
+  用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥
+  
+  
+  
